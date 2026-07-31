@@ -1,0 +1,12 @@
+# Ignore everything in this repo...
+*
+
+# ...except the marketplace listing and its documentation.
+!.gitignore
+!orca-marketplace.json
+!LICENSE
+!NOTICE
+!README.md
+!docs/
+!docs/readme/
+!docs/readme/*.md

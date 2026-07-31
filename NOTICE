@@ -1,0 +1,16 @@
+Orca s3dev Plugins — marketplace index
+Copyright (c) 2026 Evgenii (smwbev)
+
+Licensed under the MIT License. See LICENSE for the full text.
+
+The copyright above covers the marketplace index in this repository —
+orca-marketplace.json and the accompanying documentation.
+
+It does not cover the plugins the index points to. Each listed plugin is a
+separate project distributed from its own repository under its own license;
+consult that repository for its terms.
+
+The orca-marketplace.json schema is defined by Orca
+(https://github.com/stablyai/orca), which is Copyright (c) Stably AI and
+licensed under the MIT License. Field names and the structure of the index
+follow that specification.
