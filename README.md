@@ -32,7 +32,7 @@
 
 Orca reuses your system Git credentials, so private repositories work the same way.
 
-> **Not the same as “Install plugin”.** This URL belongs in **Manage sources**, not in the **Install plugin** dialog — a marketplace index is not a plugin and cannot be installed as one. Pasting it there fails with *“Add an explicit #ref …”*, because that dialog expects a plugin repository pinned to a tag, for example `https://github.com/smwbev/orca-russian.git#v5.1.20`.
+> **Not the same as “Install plugin”.** This URL belongs in **Manage sources**, not in the **Install plugin** dialog — a marketplace index is not a plugin and cannot be installed as one. Pasting it there fails with *“Add an explicit #ref …”*, because that dialog expects a plugin repository pinned to a tag, for example `https://github.com/smwbev/orca-russian.git#v5.1.21`.
 
 ### Refreshing and removing
 
@@ -63,7 +63,7 @@ Every entry pins an exact release tag rather than a moving branch, so an install
       "source": {
         "kind": "git",
         "url": "https://github.com/smwbev/orca-russian.git",
-        "ref": "v5.1.20"           // tag, branch, or commit
+        "ref": "v5.1.21"           // tag, branch, or commit
       },
       "description": "…",
       "categories": ["languages"]
