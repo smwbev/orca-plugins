@@ -65,7 +65,7 @@ Orca использует системные учётные данные Git, п
       "source": {
         "kind": "git",
         "url": "https://github.com/smwbev/orca-russian.git",
-        "ref": "v5.1.85"           // тег, ветка или коммит
+        "ref": "v5.1.86"           // тег, ветка или коммит
       },
       "description": "…",
       "categories": ["languages"]
