@@ -63,7 +63,7 @@ Every entry pins an exact release tag rather than a moving branch, so an install
       "source": {
         "kind": "git",
         "url": "https://github.com/smwbev/orca-russian.git",
-        "ref": "v5.1.112"           // tag, branch, or commit
+        "ref": "v5.1.113"           // tag, branch, or commit
       },
       "description": "…",
       "categories": ["languages"]
