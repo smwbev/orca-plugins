@@ -2,7 +2,7 @@
 
 <p align="center">
   <img src="https://img.shields.io/badge/plugins-1-08C?style=flat" alt="1 plugin in the index" />
-  <img src="https://img.shields.io/badge/Orca-%E2%89%A5%201.4.0-4493F8?style=flat" alt="Requires Orca 1.4.0 or newer" />
+  <img src="https://img.shields.io/badge/Orca-%E2%89%A5%201.4.160-4493F8?style=flat" alt="Marketplace sources need Orca 1.4.160 or newer" />
   <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-08C?style=flat" alt="MIT License" /></a>
 </p>
 
@@ -19,20 +19,23 @@
 
 ## Add this marketplace to Orca
 
-1. **Settings** → **Plugins** → enable the plugin system.
-2. Open **Marketplace sources**.
-3. Paste the URL into **Git URL**, keep the ref as `main`, and click **Add source**:
+1. **Settings** → **Plugins** → turn on **Plugin system**.
+2. Click **Manage sources**.
+3. Paste the URL into **Git URL**, leave **Git ref** at `main`, and click **Add source**:
 
    ```
    https://github.com/smwbev/orca-plugins.git
    ```
 
 4. The index appears under **Configured sources** as **Orca s3dev Plugins**, pinned at the exact commit it fetched.
-5. Open the **All** tab, find the plugin you want, and click **Install**.
+5. Open the **All** tab, find the plugin you want, click **Install**, and confirm with **Install plugin**.
+6. Orca opens a review dialog for the plugin. Nothing is active until you click **Enable plugin** there.
+
+A card is titled from the plugin key, so `smwbev.russian` is listed as **Russian**.
 
 Orca reuses your system Git credentials, so private repositories work the same way.
 
-> **Not the same as “Install plugin”.** This URL belongs in **Manage sources**, not in the **Install plugin** dialog — a marketplace index is not a plugin and cannot be installed as one. Pasting it there fails with *“Add an explicit #ref …”*, because that dialog expects a plugin repository pinned to a tag, for example `https://github.com/smwbev/orca-russian.git#v5.1.157`.
+> **Not the same as “Install plugin”.** This URL belongs in **Manage sources**, not in the **Install plugin** dialog — a marketplace index is not a plugin and cannot be installed as one. Pasting it there fails with *“Add an explicit #ref …”*, because that dialog expects a plugin repository pinned to a tag, for example `https://github.com/smwbev/orca-russian.git#v5.1.158`.
 
 ### Refreshing and removing
 
@@ -45,9 +48,9 @@ Orca reuses your system Git credentials, so private repositories work the same w
 
 | Plugin | ID | Category | Description |
 |---|---|---|---|
-| [Русский](https://github.com/smwbev/orca-russian) | `smwbev.russian` | `languages` | A complete Russian translation of the Orca interface — 15,433 strings, 99.1 % of the catalog |
+| [Русский](https://github.com/smwbev/orca-russian) | `smwbev.russian` | `languages` | A complete Russian translation of the Orca interface — 15,433 strings, 99.1 % of what a language pack may translate |
 
-Every entry pins an exact release tag rather than a moving branch, so an install always resolves to reviewed content. When a plugin ships a new version, the `ref` in [`orca-marketplace.json`](orca-marketplace.json) is bumped and Orca offers the update after the next refresh.
+Every entry pins an exact release tag rather than a moving branch, so an install always resolves to reviewed content. When a plugin ships a new version, the `ref` in [`orca-marketplace.json`](orca-marketplace.json) is bumped, and **Check for update** on the plugin's card fetches it.
 
 ---
 
@@ -63,7 +66,7 @@ Every entry pins an exact release tag rather than a moving branch, so an install
       "source": {
         "kind": "git",
         "url": "https://github.com/smwbev/orca-russian.git",
-        "ref": "v5.1.157"           // tag, branch, or commit
+        "ref": "v5.1.158"           // tag, branch, or commit
       },
       "description": "…",
       "categories": ["languages"]
