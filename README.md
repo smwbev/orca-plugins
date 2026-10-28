@@ -35,7 +35,7 @@ A card is titled from the plugin key, so `smwbev.russian` is listed as **Russian
 
 Orca reuses your system Git credentials, so private repositories work the same way.
 
-> **Not the same as “Install plugin”.** This URL belongs in **Manage sources**, not in the **Install plugin** dialog — a marketplace index is not a plugin and cannot be installed as one. Pasting it there fails with *“Add an explicit #ref …”*, because that dialog expects a plugin repository pinned to a tag, for example `https://github.com/smwbev/orca-russian.git#v5.1.176`.
+> **Not the same as “Install plugin”.** This URL belongs in **Manage sources**, not in the **Install plugin** dialog — a marketplace index is not a plugin and cannot be installed as one. Pasting it there fails with *“Add an explicit #ref …”*, because that dialog expects a plugin repository pinned to a tag, for example `https://github.com/smwbev/orca-russian.git#v5.1.177`.
 
 ### Refreshing and removing
 
@@ -48,7 +48,7 @@ Orca reuses your system Git credentials, so private repositories work the same w
 
 | Plugin | ID | Category | Description |
 |---|---|---|---|
-| [Русский](https://github.com/smwbev/orca-russian) | `smwbev.russian` | `languages` | A complete Russian translation of the Orca interface — 16,874 strings, 99.2 % of what a language pack may translate |
+| [Русский](https://github.com/smwbev/orca-russian) | `smwbev.russian` | `languages` | A complete Russian translation of the Orca interface — 15,657 strings, 99.9 % of what a language pack may translate |
 
 Every entry pins an exact release tag rather than a moving branch, so an install always resolves to reviewed content. When a plugin ships a new version, the `ref` in [`orca-marketplace.json`](orca-marketplace.json) is bumped, and **Check for update** on the plugin's card fetches it.
 
@@ -66,7 +66,7 @@ Every entry pins an exact release tag rather than a moving branch, so an install
       "source": {
         "kind": "git",
         "url": "https://github.com/smwbev/orca-russian.git",
-        "ref": "v5.1.176"           // tag, branch, or commit
+        "ref": "v5.1.177"           // tag, branch, or commit
       },
       "description": "…",
       "categories": ["languages"]
